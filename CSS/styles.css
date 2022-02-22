@@ -1,0 +1,284 @@
+:root {
+    --main-font: font-family: 'Roboto', sans-serif;
+    --secondary-font: font-family: 'Raleway', sans-serif;
+    --main-color: #757575;
+    --secondary-color: #2196F3;
+    --font-black-color: #212121;
+}
+body {
+   background: #FFFFFF;
+   font-family: 'Roboto', sans-serif;;
+   color: var(--font-black-color);
+   font-weight: 500;
+   width: 1200px;
+   }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin:0;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+}
+
+img {display: block;
+}
+
+.list {
+        list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+
+.container {
+    width: 1600px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* pseudoclasses components */
+
+.logo-link:hover,
+.logo-link:focus, 
+.logo-accent:hover,
+.logo-accent:focus {
+    cursor: pointer
+}
+
+.nav-contact-link-mail:hover,
+.nav-contact-link-mail:focus,
+.nav-contact-link-tel:hover,
+.nav-contact-link-tel:focus,
+.footer-logo-link:hover,
+.footer-logo-link:focus,
+.footer-tel:hover,
+.footer-tel:focus,
+.footer-mail:hover,
+.footer-mail:focus {
+    color: var(--secondary-color);
+}
+
+
+/* ======== HEADER ======== */
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header{
+    width: 1600px;
+    height: 80px;
+    left: 0px;
+    top: 0px; 
+    width: 1600px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.logo{
+    margin: 24px 93px 25px 215px;
+
+}
+
+.logo-link{
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+}
+
+.logo-accent{
+    color: var(--font-black-color);
+}
+
+
+.nav-list {
+    display: flex;
+
+}
+
+.nav-list-item {
+    
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    padding: 1,0'
+}
+
+.nav-list-item:not(:last-child){
+    margin-right: 46px;
+}
+
+.nav-list-item-link {
+    color:var(--font-black-color);
+}
+
+.nav-list-item-link:hover,
+.nav-list-item-link:focus {
+    color: var(--secondary-color);
+}
+
+.header .nav-contact {
+    margin-left: auto;
+}
+
+.nav-contact-link-tel,
+.nav-contact-link-mail {
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    padding: 1,0;
+    color: var(--main-color);
+}
+
+.nav-contact-link-tel {
+    margin-right: 227px;
+    margin-left: 50px;
+}
+
+
+/* ============== PORTFOLIO.HTML ============== */
+
+.filter-div {
+    margin-top: 94px;
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+
+.filter-list-item{
+    display: inline-flex;
+    align-items: center;
+ 
+}
+
+.filter-list-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.button-filter {
+    height: 38px;
+    background-color: #F5F4FA;
+    border: 1px solid #F5F4FA;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    padding: 6px 22px;
+}
+
+.button-filter:active,
+.button-filter:hover,
+.button-filter:focus {
+    background-color: var(--secondary-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+.portfolio {
+    display: block;
+    justify-content: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 94px;
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-list-item {
+    display: inline-block;
+    justify-content: space-around;
+    Width: 370px;
+    Height: auto;
+    border: 1px solid #EEE;
+    margin: 15px;
+
+}
+
+.portfolio-list-item:hover {
+    cursor: pointer;
+}
+
+.portfolio-list-item-header {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.000;
+    letter-spacing: 0.06em;
+    padding-left: 24px;
+}
+
+.portfolio-list-item-text {
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    padding-left:24px;
+    padding-right:24px;
+}
+
+/* ======== END HEADER ======== */
+/* ----------------------------------------------------------------------- */
+/* ======== FOOTER ======== */
+.section-footer {
+    width: 1600px;
+    height: 252px;
+    background-color: #2F303A;
+}
+
+.footer-content {
+    padding-left: 215px;
+    padding-top: 60px;
+}
+
+
+.footer-logo-link {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+}
+
+.footer-logo-accent {
+    color: #fff;
+}
+
+.footer-address,
+.li-footer-mail,
+.li-footer-tel {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    padding-top: 20px;
+}
+
+.mailto-footer-mail,
+.callto-footer-tel {
+    color: hsl(0, 0%, 60%);
+}
